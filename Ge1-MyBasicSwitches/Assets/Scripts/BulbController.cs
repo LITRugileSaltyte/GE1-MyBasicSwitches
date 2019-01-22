@@ -10,7 +10,7 @@ public class BulbController : MonoBehaviour {
     void Awake()
     {
         bulbAnimator = gameObject.GetComponent<Animator>();
-        bulbOn = true;
+        bulbOn = false;
     }
 
     public void turnOn()
