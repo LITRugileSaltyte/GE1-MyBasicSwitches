@@ -5,7 +5,7 @@ public class SwitchController : MonoBehaviour {
 
 	// switchOff reflects whether the switch is on ot off
 	private bool switchOff = true;
-
+   
 	// determines whether the switch is enabled or not. If enabled the
 	// player can toggle the switch by pressing the spacebar
 	private bool switchEnabled = false;
@@ -13,13 +13,14 @@ public class SwitchController : MonoBehaviour {
 	// switchAnimator will hold the gameobjects Animator
 	private Animator switchAnimator;
 
+
 	// The Awake function of each class is called before the Start function. It is
 	// here you should initialise class properties/variables like those above.
 	void Awake() {
 		// Get the Animator off the game object this script is attached to as
 		// we'll need it later
 		switchAnimator = gameObject.GetComponent<Animator> ();
-
+   
 		// Let's turn off the switch to start with
 		turnOff();
 	}
